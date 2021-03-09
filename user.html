@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Virtual Status Display
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js""></script>
+    <div>
+
+    </div>
+</head>
+
+<body id="body">
+    <div class="row">
+        <div class="column left">
+            <h1 id=tableTitle>People in House</h1>
+            <hr>
+            <form method="POST" name="personList">
+                <table id ="peopleTable" class="table" border="1">
+                    <thead>
+                        <th>Room Name</th>
+                        <th>Status</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table><hr>
+                <br>
+                Name <input type="text"  placeholder= "Enter name" name="name"><br>
+                Status <input type="text" placeholder= "Enter status" name="status"><br><br>
+                <input type="button" name="add" value="Add" onclick="addPerson()">
+            </form>
+           
+        </div>  
+
+        <div class="column middle">
+            <div class="status">
+                <h1>Your Current Status</h1>
+                
+                <div class="box">
+                    <h2>Status: <b id=displayedStatus></b> </h2>
+                    <h3>Room: <b id=displayedRoom></b> </h3>
+                    <h4>Reason:
+                        <div class="innerBox">
+                            <p><b id=displayedReason></b></p>
+                        </div>
+                    </h4>
+                    
+                </div> 
+                
+            </div>
+        </div>
+
+
+        <div class="column right">
+            <div class="form">
+                <h2>Statuses:</h2>
+                <select id="statusText">
+                    <option value="Available">Available</option>
+                    <option value="Unavailable">Unavailable</option>
+                    <option value="Busy">Busy</option>
+                    <option value="Away">Away</option>
+                </select>
+                <input type='button' onclick="changeStatusText()" value='Update Status'>
+
+                <h2>Room:</h2>
+                <input type='text' id='roomText' placeholder='Enter Room Here' value=''>
+                <br>
+                <input type='button' onclick="changeRoomText()" value='Update Room'>
+
+                <h2>Reason:</h2>
+                <textarea id='reasonText' placeholder="Enter Reason Here!" cols="30" rows="5" value=''></textarea>
+                <br>
+                <input type='button' onclick="changeReasonText()" value='Update Reason'>
+
+            </div>
+        </div>
+       
+    </div>
+
+</body>
+</html>
