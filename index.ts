@@ -1,7 +1,8 @@
 import express, {Application, urlencoded} from "express";
+import {join} from "path";
 
 const app: Application = express(); 
-app.use(express.static("./assets"));
+app.use(express.static(join(__dirname,"../assets")));
 app.use(urlencoded({extended:true}));
 
 app.get("/",(req,res)=>{
@@ -9,7 +10,7 @@ app.get("/",(req,res)=>{
     var isLocal = (req.connection.localAddress === req.connection.remoteAddress);
 
     console.log(isLocal);
-    res.send("ok");
+    res.sendFile('user.html', {root:join(__dirname, "../assets")})
 });
 
 app.listen(1337, ()=>{
