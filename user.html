@@ -28,7 +28,11 @@
                         <button style="font-size:24px" onclick=showEditor()><i class="fa fa-pencil"></i></button>
                     </span>
                     <h3>Room: <b id=displayedRoom></b> </h3>
-                    <h3>Reason: <b id=displayedReason></b></h3>
+                    <h3>Reason: 
+                        <div class="a">
+                            <b id=displayedReason></b>
+                        </div>
+                    </h3>
                 </div>         
             </div>    
         </div>
@@ -46,12 +50,12 @@
                         <input type='button' onclick="changeStatusText()" value='Update Status'>
         
                         <h2>Room:</h2>
-                        <input type='text' id='roomText' placeholder='Enter Room Here' value=''>
+                        <input type='text' id='roomText' placeholder='Enter Room Here' value='' maxlength="50">
                         <br>
                         <input type='button' onclick="changeRoomText()" value='Update Room'>
         
                         <h2>Reason:</h2>
-                        <textarea id='reasonText' placeholder="Enter Reason Here!" cols="30" rows="5" value=''></textarea>
+                        <textarea id='reasonText' placeholder="Enter Reason Here!" cols="30" rows="5" value='' maxlength="180"></textarea>
                         <br>
                         <input type='button' onclick="changeReasonText()" value='Update Reason'>
                     </div>
