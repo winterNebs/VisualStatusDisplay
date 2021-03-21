@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Virtual Status Display
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js""></script>
+    <div>
+
+    </div>
+</head>
+
+<body id="body">
+    <div class="row">
+        <div class="column left">
+            <div class="status">
+                <div class="statusLabel">
+                    <h1>Your Current Status</h1>
+                </div>
+                <div class="box">
+                    <span class="a">
+                        <h2>Status: <b id=displayedStatus></b> </h2>  
+                    </span>
+                    <span class="b">
+                        <button style="font-size:24px" onclick=showEditor()><i class="fa fa-pencil"></i></button>
+                    </span>
+                    <h3>Room: <b id=displayedRoom></b> </h3>
+                    <h3>Reason: 
+                        <div class="a">
+                            <b id=displayedReason></b>
+                        </div>
+                    </h3>
+                </div>         
+            </div>    
+        </div>
+        <div id="hideDiv" hidden>
+            <div class="column right">
+                <div class="rightBox">
+                    <div class="form">
+                        <h2>Status:</h2>
+                        <select id="statusText">
+                            <option value="Available">Available</option>
+                            <option value="Unavailable">Unavailable</option>
+                            <option value="Busy">Busy</option>
+                            <option value="Away">Away</option>
+                        </select>
+                        <input type='button' onclick="changeStatusText()" value='Update Status'>
+        
+                        <h2>Room:</h2>
+                        <input type='text' id='roomText' placeholder='Enter Room Here' value='' maxlength="50">
+                        <br>
+                        <input type='button' onclick="changeRoomText()" value='Update Room'>
+        
+                        <h2>Reason:</h2>
+                        <textarea id='reasonText' placeholder="Enter Reason Here!" cols="30" rows="5" value='' maxlength="180"></textarea>
+                        <br>
+                        <input type='button' onclick="changeReasonText()" value='Update Reason'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

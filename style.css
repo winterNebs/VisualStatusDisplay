@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.statusLabel {
+    margin-left: 4%;
+}
+#body{
+    background-image: linear-gradient(to right, #b3ffe6, #cfdef3);
+}
+
+h1, h2, form{
+    color: Black;
+}
+
+/*Message Area*/
+div.a {
+    width: 100%;
+    float: left;
+    word-wrap: break-word;
+}
+span.a{
+    display: inline-block;
+}
+
+span.b{
+    display: inline-block;
+    float: right;
+}
+.box {
+    position: relative;
+    max-width: 1000px;
+    height: 50vh;
+    padding: 30px;
+    background: rgba(255, 255, 255, .5);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+
+}
+
+.box h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: black;
+    line-height: 5rem;
+}
+.box h3 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 0;
+    font-size: 30px;
+    color: black;
+}
+
+.rightBox {
+    position: relative;
+    max-width: 500px;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    height: 55vh;
+    padding: 20px;
+    background: rgba(255, 255, 255, .5);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+/*Msg Box*/
+textarea {
+    resize: none;
+    max-height:20rem;
+}
+
+/*Table*/
+#tableTitle {
+    color:white;
+}
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px;
+    width: 100%;
+}
+
+.left {
+    width: 78%;
+}
+
+.right {
+    width: 22%;
+}
