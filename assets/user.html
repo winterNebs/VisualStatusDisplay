@@ -3,11 +3,12 @@
 
 <head>
     <title>
-        Virtual Status Display
+        Visual Status Display
     </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="index.js""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+    <script type="module" src="/user.js"></script>
     <div>
 
     </div>
@@ -25,9 +26,9 @@
                         <h2>Status: <b id=displayedStatus></b> </h2>  
                     </span>
                     <span class="b">
-                        <button style="font-size:24px" onclick=showEditor()><i class="fa fa-pencil"></i></button>
+                        <button style="font-size:24px"><i class="fa fa-pencil"></i></button>
                     </span>
-                    <h3>Room: <b id=displayedRoom></b> </h3>
+                    <h3>Room: <br><b id=displayedRoom></b> </h3>
                     <h3>Reason: 
                         <div class="a">
                             <b id=displayedReason></b>
@@ -47,17 +48,17 @@
                             <option value="Busy">Busy</option>
                             <option value="Away">Away</option>
                         </select>
-                        <input type='button' onclick="changeStatusText()" value='Update Status'>
-        
+                        <input type='button' value='UpdateStatus'>
+                        
                         <h2>Room:</h2>
                         <input type='text' id='roomText' placeholder='Enter Room Here' value='' maxlength="50">
                         <br>
-                        <input type='button' onclick="changeRoomText()" value='Update Room'>
+                        <input type='button' value='UpdatedRoom'>
         
                         <h2>Reason:</h2>
                         <textarea id='reasonText' placeholder="Enter Reason Here!" cols="30" rows="5" value='' maxlength="180"></textarea>
                         <br>
-                        <input type='button' onclick="changeReasonText()" value='Update Reason'>
+                        <input type='button' value='UpdatedReason'>
                     </div>
                 </div>
             </div>

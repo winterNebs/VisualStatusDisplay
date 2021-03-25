@@ -30,6 +30,7 @@ span.b{
     display: inline-block;
     float: right;
 }
+/*Display Area*/
 .box {
     position: relative;
     max-width: 1000px;
