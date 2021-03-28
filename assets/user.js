@@ -3,6 +3,19 @@ var status = ""
 var room = ""
 var reason = ""
 
+window.onload = function () {
+    axios.get(window.location.href + "status")
+    .then(function(data){
+        console.log(data);
+        let x = data.data;
+        status = x["status"];
+        room = x["room"];
+        reason = x["reason"];
+        document.getElementById('displayedStatus').innerHTML = status;
+        document.getElementById('displayedRoom').innerHTML = room;
+        document.getElementById('displayedReason').innerHTML = reason;
+    });  
+}
 function showEditor()
 {   
     var x = document.getElementById("hideDiv")
@@ -17,6 +30,7 @@ function showEditor()
 }
 document.querySelector('button').addEventListener('click',showEditor);
 
+document.querySelector('#statusText').addEventListener('change',changeStatusText);
 function changeStatusText()
 {
     var updatedStatus = document.getElementById('statusText').value;
@@ -46,7 +60,7 @@ function changeStatusText()
         console.log(error)
     })
 }
-document.querySelector('input[value="UpdateStatus"]').addEventListener('click',changeStatusText);
+document.querySelector('#reasonText').addEventListener('input',changeReasonText);
 function changeReasonText()
 {
     var updatedReason = document.getElementById('reasonText').value;
@@ -61,8 +75,7 @@ function changeReasonText()
         console.log(error)
     })
 }
-document.querySelector('input[value="UpdatedReason"]').addEventListener('click',changeReasonText);
-
+document.querySelector('#roomText').addEventListener('input',changeRoomText);
 function changeRoomText()
 {
     var updatedRoom = document.getElementById('roomText').value;
@@ -77,7 +90,7 @@ function changeRoomText()
         console.log(error)
     })
 }
-document.querySelector('input[value="UpdatedRoom"]').addEventListener('click',changeRoomText);
+
 
 
 
