@@ -38,7 +38,7 @@ function changeStatusText()
     status = result
     document.getElementById('displayedStatus').innerHTML = result;
     let payload = {status: status, room: room, reason: reason,};
-    axios.put(window.location.href + "/status", payload)
+    axios.put(window.location.href + "status", payload)
     .then(response=>{
         console.log(response)
     })
@@ -53,7 +53,7 @@ function changeReasonText()
     reason = updatedReason;
     document.getElementById('displayedReason').innerHTML = updatedReason;
     let payload = {status: status, room: room, reason: reason,};
-    axios.put(window.location.href + "/status", payload)
+    axios.put(window.location.href + "status", payload)
     .then(response=>{
         console.log(response)
     })
@@ -69,7 +69,7 @@ function changeRoomText()
     room = updatedRoom;
     document.getElementById('displayedRoom').innerHTML = updatedRoom;
     let payload = {status: status, room: room, reason: reason,};
-    axios.put(window.location.href + "/status", payload)
+    axios.put(window.location.href + "status", payload)
     .then(response=>{
         console.log(response)
     })

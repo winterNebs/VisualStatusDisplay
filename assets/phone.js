@@ -1,6 +1,6 @@
 function axiosTest() {
     /* Replace 181 with whatever your ipv4 address is */
-    axios.get(window.location.href + "/status")
+    axios.get(window.location.href + "status")
     .then(function(data){
         let x = data.data;
         let status = x["status"];
