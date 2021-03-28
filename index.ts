@@ -1,8 +1,10 @@
+import bodyParser from "body-parser";
 import express, {Application, urlencoded} from "express";
 import {join} from "path";
 
 const app: Application = express(); 
 app.use(express.static(join(__dirname,"../assets")));
+app.use(bodyParser.json());
 app.use(urlencoded({extended:true}));
 
 app.get("/",(req,res)=>{
