@@ -8,5 +8,11 @@
     "@types/node": "^14.14.32",
     "body-parser": "^1.19.0",
     "express": "^4.17.1"
-  }
+  },
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "name": "visualstatusdisplay",
+  "pkg": { 
+    "assets": ["assets/*.*"]
+  } 
 }
