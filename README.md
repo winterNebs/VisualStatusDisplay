@@ -1,14 +1,25 @@
 # VisualStatusDisplay
 
 # How to start the application:
-Host the Json server on your local ipv4 address, replace the 181 below and 
-in /phone.js and /user.js change `192.168.0.181` to your local ipv4 address
-1) ### Run the Json Server by executing:<br> `json-server --host 192.168.0.181 --port 3000 db.json`
-2) ### Run the application by executing:<br> `node dist/index.js`
+1) go to the directory of the application in your terminal
+2) type `npm install` and hit `enter`
+3) type `tsc` and hit `enter`
+4) type `node dist/index.js` and hit `enter`
+5) The application should be running on `localhost:1337` or on `your ipv4 address with port 1337`
+
+## How to find your ipv4 address?
+### Windows users:
+1) On your computer search bar, search `cmd` and type `ipconfig` and hit `enter`
+2) Your `ipv4 address` should be located under `Wireless Lan adapter Wi-Fi:`
+3) It should be a number like: 192.168.0.XXX, and the XXX replaced with a 3 digit number
+
+### Mac users:
+1) On your computer search bar, search `terminal` and type `ipconfig getifaddr en0` and hit `enter`
+2) Your `ipv4 address` should be printed on the terminal
+3) It should be a number like: 192.168.0.XXX, and the XXX replaced with a 3 digit number
 
 ## After starting the application: 
-- the Json server should be running on your ipv4 address `192.168.0.XXX:3000` 
-- the `display controller` should be hosted on `localhost:1337` or 192.168.
+- the `display controller` should be hosted on 192.168.0.XXX:1337
 - the display should be hosted on your ipv4 address `192.168.0.XXX:1337/phone`
 
 # How to use the application:
