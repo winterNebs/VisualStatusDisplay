@@ -12,6 +12,7 @@
 ### Mac users:
 1) Download the `visualstatusdisplay-macos` file
 2) Type the following command at the terminal command prompt to change directories to the location of the file you want to execute, relacing `/path/to/NameOfFile` with the full file location, called a path: 
+
 `cd /path/to/NameOfFile`
 
 3) Type the following command to set the file's executable bit using the chmod command, replacing `NameOfFile` with the name of the file you want to execute: 
