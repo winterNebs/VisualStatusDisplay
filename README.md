@@ -9,6 +9,19 @@
 4) type `node dist/index.js` and hit `enter`
 5) The application should be running on `localhost:1337` or on `your ipv4 address with port 1337`
 
+### Mac users:
+1) Download the `visualstatusdisplay-macos` file
+2) Type the following command at the terminal command prompt to change directories to the location of the file you want to execute, relacing `/path/to/NameOfFile` with the full file location, called a path: 
+`cd /path/to/NameOfFile`
+
+3) Type the following command to set the file's executable bit using the chmod command, replacing `NameOfFile` with the name of the file you want to execute: 
+
+`chmod +x ./NameOfFile`
+
+4) Type the following to execute the file: 
+
+`./NameOfFile`
+
 ## How to find your ipv4 address?
 ### Windows users:
 1) On your computer search bar, search `cmd` and type `ipconfig` and hit `enter`
@@ -16,7 +29,7 @@
 3) It should be a number like: 192.168.0.XXX, and the XXX replaced with a 3 digit number
 
 ### Mac users:
-1) On your computer search bar, search `terminal` and type `ipconfig getifaddr en0` and hit `enter`
+1) Type the following command at the terminal command prompt: `ipconfig getifaddr en0` and hit `enter`
 2) Your `ipv4 address` should be printed on the terminal
 3) It should be a number like: 192.168.0.XXX, and the XXX replaced with a 3 digit number
 
