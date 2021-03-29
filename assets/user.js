@@ -44,7 +44,7 @@ function changeStatusText()
         var result = updatedStatus.fontcolor("red") 
     }
     else if (updatedStatus === "Away"){
-        var result = updatedStatus.fontcolor("yellow") 
+        var result = updatedStatus.fontcolor("#F5CE0B") 
     }
     else{
         var result = updatedStatus.fontcolor("black")
