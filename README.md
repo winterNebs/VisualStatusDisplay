@@ -1,8 +1,10 @@
 # VisualStatusDisplay
+# Requirements:
+- Node.js
 
 # How to start the application:
 1) go to the directory of the application in your terminal
-2) type `npm install` and hit `enter`
+2) type `npm i` and hit `enter`
 3) type `tsc` and hit `enter`
 4) type `node dist/index.js` and hit `enter`
 5) The application should be running on `localhost:1337` or on `your ipv4 address with port 1337`
