@@ -23,6 +23,13 @@
 
 `./NameOfFile`
 
+If the file is not able to executed, try:
+1) Go to your `System preferences`
+2) Click on `Security and Privacy`
+3) Under `General` at the bottom half of the display should have a prompt asking if you want to allow the app to run
+4) Click `allow`
+5) It should be running on localhost:1337 
+
 ## How to find your ipv4 address?
 ### Windows users:
 1) On your computer search bar, search `cmd` and type `ipconfig` and hit `enter`
@@ -35,8 +42,8 @@
 3) It should be a number like: 192.168.0.XXX, and the XXX replaced with a 3 digit number
 
 ## After starting the application: 
-- the `display controller` should be hosted on 192.168.0.XXX:1337
-- the display should be hosted on your ipv4 address `192.168.0.XXX:1337/phone`
+- the `display controller` should be hosted on your device on localhost:1337 and your device is the only one with access to the editor
+- the display should be hosted on your ipv4 address `192.168.0.XXX:1337` and any device can view the display
 
 # How to use the application:
 - The user can edit the display by using the `display controller`
