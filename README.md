@@ -28,3 +28,9 @@
 - The user can edit the display by using the `display controller`
 - The display is constantly checking to see if the user has updated their status
 - If an update is detected, the display will be updated with the user's changes 
+
+# Compiling to standalone
+Install pkg
+`npm i -g pkg`
+Run pkg in the root folder:
+`pkg .`
