@@ -3,7 +3,7 @@
 - Node.js
 
 # How to start the application:
-### If you clone the repo:
+### If you cloned this repository:
 1) go to the directory of the application in your terminal
 2) type `npm i` and hit `enter`
 3) type `tsc` and hit `enter`
@@ -11,7 +11,7 @@
 5) The application should be running on `localhost:1337` or on `your ipv4 address with port 1337`
 
 ### Mac users:
-1) Download the `visualstatusdisplay-macos` file
+1) Download the latest `visualstatusdisplay-macos` file under releases
 2) Type the following command at the terminal command prompt to change directories to the location of the file you want to execute, relacing `/path/to/NameOfFile` with the full file location, called a path: 
 
 `cd /path/to/NameOfFile`
