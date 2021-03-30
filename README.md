@@ -3,6 +3,7 @@
 - Node.js
 
 # How to start the application:
+### If you clone the repo:
 1) go to the directory of the application in your terminal
 2) type `npm i` and hit `enter`
 3) type `tsc` and hit `enter`
