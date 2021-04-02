@@ -41,7 +41,11 @@ app.put("/", (req,res)=>{
     }
 
 });
+var localIpV4Address = require("local-ipv4-address");
 
-app.listen(1337, ()=>{
-    console.log("started on port: 1337");
-})
+
+localIpV4Address().then(function(ipAddress:any){
+     app.listen(1337, ()=>{
+        console.log("started on: " +ipAddress+":1337");
+    })
+});
