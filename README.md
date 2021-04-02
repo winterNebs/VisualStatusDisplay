@@ -8,7 +8,7 @@
 2) Double click the downloaded file
 3) A security window should pop up asking if you want to run anyway
 4) Click `more info` and `run anyway` or `allow`
-5) 5) It should be running on localhost:1337 
+5) The application should be running on localhost:1337 
 
 ### Mac users:
 1) Download the latest `visualstatusdisplay-macos` file under `Releases`
